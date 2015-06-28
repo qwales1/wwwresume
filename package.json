@@ -1,0 +1,33 @@
+{
+  "name": "wwwresume",
+  "devDependencies": {
+    "apache-server-configs": "*",
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha": "*",
+    "grunt-modernizr": "*",
+    "grunt-newer": "*",
+    "grunt-rev": "*",
+    "grunt-svgmin": "*",
+    "grunt-usemin": "*",
+    "grunt-wiredep": "*",
+    "jshint-stylish": "*",
+    "load-grunt-tasks": "*",
+    "time-grunt": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

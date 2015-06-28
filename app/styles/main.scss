@@ -1,0 +1,168 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  .header-link {
+    font-size: 32px;
+    padding-bottom:19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.inline {
+  display: inline-block;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.profile-info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  @media (max-width: 768px){
+    text-align: center;
+  }
+  h3 {
+    margin-top: 0;
+    @media (max-width: 768px){
+      margin-top: 20px;
+    }
+  }
+  .profile-image {
+    border-radius: 10px;
+    @media (max-width: 768px){
+      margin: 15px auto;
+
+    }
+  }
+  .profile-info-item {
+    .profile-info-icon {
+      font-size: 32px;
+      padding: 10px;
+    }
+  }
+  .profile-info-text {
+    margin-top: 15px;
+  }
+}
+
+#resume {
+  margin-top:40px;
+  .close i{
+    font-size:1.2em;
+  }
+  .resume-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+
+}
+.resume {
+  margin-top: 20px;
+  .resume-item {
+    text-align: left;
+  }
+  .resume-controls {
+    margin-bottom: 15px;
+  }
+}
+.projects {
+  margin-top: 20px;
+  .project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .project-link {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .no-print {
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+  #resume {
+    margin:0;
+    .resume-item {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .project-link {
+    font-size: 1em;
+  }
+  .show-on-print {
+     visibility: visible;
+     display: block;
+  }
+  .full-on-print {
+    width: 100%;
+  }
+}
